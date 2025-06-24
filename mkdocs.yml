@@ -7,13 +7,16 @@ theme:
 extra_css:
   - style.css
 nav:
-  - Strona główna: index.md
-  - Budowa jachtu: budowa-jachtu.md
-  - Teoria żeglowania: teoria-zeglowania.md
-  - Teoria manewrowania: teoria-manewrowania.md
-  - Locja: locja.md
-  - Przepisy: przepisy.md
-  - Nawigacja: nawigacja.md
-  - Ratownictwo: ratownictwo.md
-  - Meteorologia: meteorologia.md
-  - Prace bosmańskie: prace-bosmanskie.md
+  - Ogólna:
+    - Strona główna: index.md
+    - Budowa jachtu: budowa-jachtu.md
+    - Teoria żeglowania: teoria-zeglowania.md
+    - Teoria manewrowania: teoria-manewrowania.md
+    - Locja: locja.md
+    - Przepisy: przepisy.md
+    - Nawigacja: nawigacja.md
+    - Ratownictwo: ratownictwo.md
+    - Meteorologia: meteorologia.md
+    - Prace bosmańskie: prace-bosmanskie.md
+  - Boczna:
+    - Prace bosmańskie: prace-bosmanskie.md
