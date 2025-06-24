@@ -1,6 +1,18 @@
 # Patent Żeglarski – baza wiedzy
 
-Witamy w zbiorze materiałów przygotowujących do uzyskania patentu żeglarza jachtowego. Zebraliśmy tu najważniejsze informacje dotyczące wymagań egzaminacyjnych, programu szkolenia oraz podstawowych manewrów.
+Witamy w zbiorze materiałów pomagających w przygotowaniu do egzaminu na patent żeglarza jachtowego. Dokumentacja została podzielona na kilka części, aby łatwiej odnaleźć interesujące zagadnienia.
+
+## Co znajdziesz w serwisie
+
+- [Budowa jachtu](budowa-jachtu.md)
+- [Teoria żeglowania](teoria-zeglowania.md)
+- [Teoria manewrowania](teoria-manewrowania.md)
+- [Locja śródlądowa](locja.md)
+- [Przepisy i sygnalizacja](przepisy.md)
+- [Podstawy nawigacji](nawigacja.md)
+- [Ratownictwo i bezpieczeństwo](ratownictwo.md)
+- [Meteorologia](meteorologia.md)
+- [Prace bosmańskie](prace-bosmanskie.md)
 
 ## Wymagania wstępne
 
@@ -10,37 +22,5 @@ Witamy w zbiorze materiałów przygotowujących do uzyskania patentu żeglarza j
 
 ## Program szkolenia
 
-Szkolenie obejmuje m.in.:
+Szkolenie obejmuje obsługę jachtu, manewry w porcie i na otwartych akwenach, podstawy meteorologii, zasady bezpieczeństwa oraz elementy locji i nawigacji. Po pozytywnym zdaniu egzaminu praktycznego i teoretycznego można ubiegać się o wydanie patentu.
 
-- obsługę jachtu na żaglach i na silniku
-- manewrowanie w porcie i na otwartych akwenach
-- podstawy meteorologii i oceny warunków pogodowych
-- zasady bezpieczeństwa i ratownictwa
-- elementy locji i nawigacji
-
-## Podstawowe manewry
-
-Do najważniejszych manewrów zaliczamy:
-
-- stawianie i zrzucanie żagli
-- zwroty przez sztag i przez rufę
-- podejście i odejście od kei
-- manewr "człowiek za burtą"
-- kotwiczenie i cumowanie
-
-## Teoria żeglowania
-
-Podczas części teoretycznej kandydat powinien znać:
-
-- budowę jachtu i nazewnictwo osprzętu
-- przepisy oraz zasady pierwszeństwa drogi
-- podstawowe węzły żeglarskie
-- sygnały nawigacyjne i oświetlenie jednostek
-
-## Egzamin
-
-Egzamin składa się z testu teoretycznego oraz zadań praktycznych na wodzie. Pozytywne zaliczenie obu części umożliwia ubieganie się o patent żeglarza jachtowego w Polskim Związku Żeglarskim.
-
-## Dalsze kroki
-
-Po zdobyciu patentu możliwe jest dalsze podnoszenie kwalifikacji, np. poprzez szkolenie na stopień sternika morskiego.
