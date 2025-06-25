@@ -4,19 +4,24 @@ theme:
   logo: assets/anc.svg 
   language: pl 
   favicon: assets/anc.svg
+  features:
+    - search.highlight
+    - navigation.tabs
+plugins:
+  - search:
+      lang: pl
+extra:
+  homepage: index.md
 extra_css:
   - style.css
 nav:
-  - Ogólna:
-    - Strona główna: index.md
-    - Budowa jachtu: budowa-jachtu.md
-    - Teoria żeglowania: teoria-zeglowania.md
-    - Teoria manewrowania: teoria-manewrowania.md
-    - Locja: locja.md
-    - Przepisy: przepisy.md
-    - Nawigacja: nawigacja.md
-    - Ratownictwo: ratownictwo.md
-    - Meteorologia: meteorologia.md
-    - Prace bosmańskie: prace-bosmanskie.md
-  - Boczna:
-    - Prace bosmańskie: prace-bosmanskie.md
+  - Strona główna: index.md
+  - Budowa jachtu: budowa-jachtu.md
+  - Teoria żeglowania: teoria-zeglowania.md
+  - Teoria manewrowania: teoria-manewrowania.md
+  - Locja: locja.md
+  - Przepisy: przepisy.md
+  - Nawigacja: nawigacja.md
+  - Ratownictwo: ratownictwo.md
+  - Meteorologia: meteorologia.md
+  - Prace bosmańskie: prace-bosmanskie.md

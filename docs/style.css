@@ -5,3 +5,14 @@
     --md-accent-fg-color: #4caf50;
     /* Custom accent color */ 
 }
+/* Ukryj boczne menu tylko na stronie głównej */
+.md-sidebar--secondary,
+.md-sidebar--primary {
+    display: none !important;
+}
+
+/* Rozszerz obszar treści na całą szerokość */
+/* .md-main__inner {
+    max-width: 100% !important;
+    margin: 0 auto;
+} */
