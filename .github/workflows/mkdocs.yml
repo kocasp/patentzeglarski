@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-      - master  # or 'master', change this to your main branch
+      - master  # Replace with your default branch if different
     paths:
       - '**.md'
       - 'mkdocs.yml'
@@ -21,13 +21,21 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
           pip install mkdocs
-          # Optional: if you use MkDocs Material
-          pip install mkdocs-material
+          pip install mkdocs-material  # Optional, if you use Material theme
 
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up token for pushing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote set-url origin https://${GH_TOKEN}@github.com/${{ github.repository }}.git
+          mkdocs gh-deploy --force
