@@ -2,11 +2,11 @@
   <img src="assets/logo.png" alt="Patent Żeglarski Logo" width="350"/>
 </p>
 
-# Patent Żeglarski – baza wiedzy
+# Patent Żeglarski – kompletna baza wiedzy
 
 Witamy w zbiorze materiałów pomagających w przygotowaniu do egzaminu na patent **żeglarza jachtowego**. Dokumentacja została podzielona na kilka części, aby łatwiej odnaleźć interesujące zagadnienia.
 
-## Co znajdziesz w serwisie
+## Co znajdziesz w bazie
 
 - [Budowa jachtu](budowa-jachtu.md)
 - [Teoria żeglowania](teoria-zeglowania.md)
