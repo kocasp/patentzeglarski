@@ -1,14 +1,12 @@
-﻿name: Deploy MkDocs site
+name: Deploy MkDocs site
 
 on:
   push:
     branches:
-      - master  # Replace with your default branch if different
-    paths:
-      - '**.md'
-      - 'mkdocs.yml'
-      - '**.yml'
-      - '**.yaml'
+      - master
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
