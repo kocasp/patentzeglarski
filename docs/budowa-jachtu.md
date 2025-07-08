@@ -27,3 +27,23 @@ Na jachtach spotykamy ożaglowanie typu slup, kuter czy kecz. Jako żagle podsta
 ## Podstawowe wyposażenie
 
 Poza masztem i żaglami każdy jacht wyposażony jest w urządzenie sterowe, kabestan do wybierania lin oraz osprzęt pokładowy taki jak knagi, bloczki czy kabestany. Wszystkie te elementy wymagają okresowej kontroli i konserwacji.
+
+## Materiały i struktura kadłuba
+
+Kadłub jachtu najczęściej wykonywany jest z laminatu poliestrowo-szklanego, ale stosuje się również drewno, aluminium czy stal. Szkielet konstrukcji tworzą wręgi i podłużnice, które nadają kształt i sztywność poszyciu. Z wierzchu laminat zabezpiecza warstwa żelkotu, natomiast w kadłubach metalowych zwraca się uwagę na ochronę antykorozyjną. Wewnątrz kadłub usztywniają grodzie rozdzielające poszczególne pomieszczenia.
+
+## Układ sterowy i napęd
+
+Płetwa sterowa połączona jest z rumplem lub kołem sterowym poprzez przekładnię linkową bądź hydrauliczną. W mniejszych jednostkach steruje się zazwyczaj rumplem, większe jachty wyposażone są w koło sterowe. Jako napęd pomocniczy służą silniki zaburtowe mocowane na pawęży lub silniki stacjonarne z wałem przechodzącym przez dławicę i śrubą napędową. W nowoczesnych konstrukcjach spotyka się także silniki elektryczne i stery strumieniowe ułatwiające manewrowanie w porcie.
+
+## Instalacje jachtowe
+
+Na pokładzie prowadzi się instalację elektryczną z akumulatorem, ładowarką i gniazdami 12 V lub 24 V. Często montuje się panele słoneczne lub generatory wiatrowe do doładowywania baterii. Instalacja wodna obejmuje zbiorniki wody słodkiej, pompy i węże doprowadzające wodę do kambuzu i toalety. W jachtach wyposażonych w kambuz stosuje się instalację gazową z butlą, którą należy odpowiednio wentylować i zabezpieczać. W chłodniejszym klimacie montuje się również ogrzewanie, zwykle na paliwo ciekłe lub gazowe.
+
+## Elektronika i instrumenty
+
+Do podstawowego wyposażenia nawigacyjnego zalicza się kompas, log i echosondę. Coraz powszechniej używa się ploterów map z odbiornikiem GPS oraz radiostacji UKF. Na większych jachtach spotyka się autopiloty, systemy AIS i rozbudowane panele kontrolne monitorujące pracę instalacji.
+
+## Pielęgnacja i konserwacja
+
+Kadłub wymaga okresowego czyszczenia i nakładania farby przeciwporostowej. Elementy drewniane impregnujemy i lakierujemy, a ruchome mechanizmy, takie jak kabestany czy zawiasy, trzeba regularnie smarować. Ważna jest również kontrola olinowania stałego, przeglądy masztu oraz szczelności poszyć i luków.
