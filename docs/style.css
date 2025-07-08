@@ -6,10 +6,10 @@
     /* Custom accent color */ 
 }
 /* Ukryj boczne menu tylko na stronie głównej */
-.md-sidebar--secondary,
+/* .md-sidebar--secondary,
 .md-sidebar--primary {
     display: none !important;
-}
+} */
 
 /* Rozszerz obszar treści na całą szerokość */
 /* .md-main__inner {
