@@ -1,12 +1,13 @@
 site_name: Patent Żeglarski | Baza Wiedzy
 theme:
   name: material
-  logo: assets/anc.svg 
-  language: pl 
+  logo: assets/anc.svg
+  language: pl
   favicon: assets/anc.svg
   features:
     - search.highlight
     - navigation.tabs
+    - navigation.top
 plugins:
   - search:
       lang: pl
@@ -25,3 +26,5 @@ nav:
   - Ratownictwo: ratownictwo.md
   - Meteorologia: meteorologia.md
   - Prace bosmańskie: prace-bosmanskie.md
+  - Silnik i napęd: silnik.md
+  - Egzamin i słowniczek: egzamin.md
