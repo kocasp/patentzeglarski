@@ -1,6 +1,7 @@
 site_name: Patent Żeglarski | Baza Wiedzy
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/anc.svg
   language: pl
   favicon: assets/anc.svg

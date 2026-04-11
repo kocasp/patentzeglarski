@@ -1,18 +1,335 @@
 /* overrides/styles.css */
 :root {
     --md-primary-fg-color: #1c2c5f;
-    /* Custom primary color */
-    --md-accent-fg-color: #4caf50;
-    /* Custom accent color */ 
-}
-/* Ukryj boczne menu tylko na stronie głównej */
-.md-sidebar--secondary,
-.md-sidebar--primary {
-    display: none !important;
+    --md-accent-fg-color:  #4caf50;
 }
 
-/* Rozszerz obszar treści na całą szerokość */
-/* .md-main__inner {
-    max-width: 100% !important;
-    margin: 0 auto;
-} */
+/* ==============================================================
+   HERO – full-viewport sailing landing section
+   ============================================================== */
+
+.mdx-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(
+    150deg,
+    #030c18  0%,
+    #061627 20%,
+    #0b2340 45%,
+    #0f3558 70%,
+    #1a4d7c 100%
+  );
+}
+
+/* ── Starfield ─────────────────────────────────────────────── */
+
+.mdx-hero__stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mdx-hero__stars::before,
+.mdx-hero__stars::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 10%  8%,  rgba(255,255,255,0.95) 0, rgba(255,255,255,0.95) 1px, transparent 1px),
+    radial-gradient(circle at 27%  20%, rgba(255,255,255,0.80) 0, rgba(255,255,255,0.80) 1px, transparent 1px),
+    radial-gradient(circle at 50%  6%,  rgba(255,255,255,0.90) 0, rgba(255,255,255,0.90) 1px, transparent 1px),
+    radial-gradient(circle at 66%  15%, rgba(255,255,255,0.75) 0, rgba(255,255,255,0.75) 1px, transparent 1px),
+    radial-gradient(circle at 80%  5%,  rgba(255,255,255,0.85) 0, rgba(255,255,255,0.85) 1px, transparent 1px),
+    radial-gradient(circle at 91%  22%, rgba(255,255,255,0.70) 0, rgba(255,255,255,0.70) 1px, transparent 1px),
+    radial-gradient(circle at 4%   35%, rgba(255,255,255,0.60) 0, rgba(255,255,255,0.60) 1px, transparent 1px),
+    radial-gradient(circle at 20%  42%, rgba(255,255,255,0.85) 0, rgba(255,255,255,0.85) 1px, transparent 1px),
+    radial-gradient(circle at 42%  30%, rgba(255,255,255,0.70) 0, rgba(255,255,255,0.70) 1px, transparent 1px),
+    radial-gradient(circle at 60%  38%, rgba(255,255,255,0.90) 0, rgba(255,255,255,0.90) 1px, transparent 1px),
+    radial-gradient(circle at 76%  33%, rgba(255,255,255,0.65) 0, rgba(255,255,255,0.65) 1px, transparent 1px),
+    radial-gradient(circle at 88%  45%, rgba(255,255,255,0.80) 0, rgba(255,255,255,0.80) 1px, transparent 1px);
+  animation: stars-twinkle 5s ease-in-out infinite alternate;
+}
+
+.mdx-hero__stars::after {
+  background-image:
+    radial-gradient(circle at 7%   58%, rgba(255,255,255,0.70) 0, rgba(255,255,255,0.70) 1px, transparent 1px),
+    radial-gradient(circle at 16%  70%, rgba(255,255,255,0.85) 0, rgba(255,255,255,0.85) 1px, transparent 1px),
+    radial-gradient(circle at 35%  52%, rgba(255,255,255,0.60) 0, rgba(255,255,255,0.60) 1px, transparent 1px),
+    radial-gradient(circle at 54%  63%, rgba(255,255,255,0.90) 0, rgba(255,255,255,0.90) 1px, transparent 1px),
+    radial-gradient(circle at 71%  56%, rgba(255,255,255,0.70) 0, rgba(255,255,255,0.70) 1px, transparent 1px),
+    radial-gradient(circle at 86%  68%, rgba(255,255,255,0.80) 0, rgba(255,255,255,0.80) 1px, transparent 1px),
+    radial-gradient(circle at 13%  82%, rgba(255,255,255,0.65) 0, rgba(255,255,255,0.65) 1px, transparent 1px),
+    radial-gradient(circle at 38%  76%, rgba(255,255,255,0.75) 0, rgba(255,255,255,0.75) 1px, transparent 1px),
+    radial-gradient(circle at 63%  80%, rgba(255,255,255,0.55) 0, rgba(255,255,255,0.55) 1px, transparent 1px),
+    radial-gradient(circle at 84%  88%, rgba(255,255,255,0.85) 0, rgba(255,255,255,0.85) 1px, transparent 1px);
+  animation-delay: -2.5s;
+  animation-duration: 7s;
+}
+
+@keyframes stars-twinkle {
+  0%   { opacity: 0.55; }
+  100% { opacity: 1;    }
+}
+
+/* ── Inner layout ───────────────────────────────────────────── */
+
+.mdx-hero__inner {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 2rem 9rem;
+  gap: 3rem;
+}
+
+/* ── Teaser text ────────────────────────────────────────────── */
+
+.mdx-hero__teaser {
+  flex: 1;
+  max-width: 560px;
+}
+
+.mdx-hero__logo {
+  margin-bottom: 1.6rem;
+}
+
+.mdx-hero__logo img {
+  height: 70px;
+  width: 70px;
+  filter: brightness(0) invert(1);
+  animation: anchor-bob 7s ease-in-out infinite;
+}
+
+@keyframes anchor-bob {
+  0%,  100% { transform: translateY(0)    rotate(0deg);  }
+  25%        { transform: translateY(-7px) rotate(-4deg); }
+  75%        { transform: translateY(-5px) rotate(4deg);  }
+}
+
+.mdx-hero__headline {
+  font-size: clamp(2.8rem, 5.5vw, 5rem) !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 0 0.8rem !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: 0 4px 32px rgba(0,0,0,0.40);
+  border: none !important;
+}
+
+.mdx-hero__tagline {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: rgba(255,255,255,0.78);
+  margin: 0 0 2.5rem;
+  line-height: 1.75;
+}
+
+.mdx-hero__tagline strong {
+  color: #81d4fa;
+  font-weight: 600;
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+
+.mdx-hero__cta {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.mdx-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.85rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.01em;
+}
+
+.mdx-hero__btn--filled {
+  background: #4caf50;
+  color: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(76,175,80,0.45);
+}
+
+.mdx-hero__btn--filled:hover {
+  background: #43a047;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(76,175,80,0.55);
+}
+
+.mdx-hero__btn--outline {
+  background: rgba(255,255,255,0.08);
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255,255,255,0.50);
+  backdrop-filter: blur(8px);
+}
+
+.mdx-hero__btn--outline:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.90);
+  transform: translateY(-3px);
+}
+
+/* ── Sailboat illustration ──────────────────────────────────── */
+
+.mdx-hero__vessel {
+  flex: 0 0 auto;
+  width: clamp(180px, 28vw, 330px);
+  opacity: 0.72;
+  animation: vessel-rock 9s ease-in-out infinite;
+  transform-origin: center 85%;
+}
+
+@keyframes vessel-rock {
+  0%,  100% { transform: rotate(-1.8deg) translateY(0);   }
+  50%        { transform: rotate( 1.8deg) translateY(-13px); }
+}
+
+/* ── Scroll hint ────────────────────────────────────────────── */
+
+.mdx-hero__scroll {
+  position: absolute;
+  bottom: 145px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.38);
+  text-decoration: none !important;
+  animation: scroll-pulse 2.4s ease-in-out infinite;
+}
+
+.mdx-hero__scroll svg {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes scroll-pulse {
+  0%,  100% { transform: translateX(-50%) translateY(0);   opacity: 0.55; }
+  50%        { transform: translateX(-50%) translateY(7px); opacity: 1.00; }
+}
+
+/* ── Animated waves ─────────────────────────────────────────── */
+
+.mdx-hero__waves {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 135px;
+  pointer-events: none;
+}
+
+.mdx-hero__waves svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wave { animation: wave-move linear infinite; }
+.wave-1 { animation-duration:  7s; }
+.wave-2 { animation-duration: 10s; animation-direction: reverse; }
+.wave-3 { animation-duration: 14s; }
+.wave-4 { animation-duration: 20s; animation-direction: reverse; }
+
+@keyframes wave-move {
+  0%   { transform: translateX(-90px); }
+  100% { transform: translateX( 85px); }
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .mdx-hero__inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 4rem 1.5rem 8rem;
+  }
+  .mdx-hero__cta {
+    justify-content: center;
+  }
+  .mdx-hero__vessel {
+    width: min(200px, 55vw);
+    opacity: 0.5;
+  }
+  .mdx-hero__scroll {
+    bottom: 155px;
+  }
+}
+
+
+/* ==============================================================
+   FEATURES GRID – section below the hero
+   ============================================================== */
+
+.features-section {
+  padding: 3.5rem 0 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.3rem 1.5rem 1.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+.feature-card__num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.feature-card h3 {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: var(--md-default-fg-color) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.feature-card p {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 !important;
+  line-height: 1.55;
+}

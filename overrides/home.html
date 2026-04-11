@@ -1,0 +1,89 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="mdx-hero">
+
+    <!-- Starfield -->
+    <div class="mdx-hero__stars" aria-hidden="true"></div>
+
+    <!-- Hero body -->
+    <div class="mdx-hero__inner">
+
+      <div class="mdx-hero__teaser">
+        <div class="mdx-hero__logo">
+          <img src="assets/anc.svg" alt="">
+        </div>
+        <h1 class="mdx-hero__headline">Patent Żeglarski</h1>
+        <p class="mdx-hero__tagline">
+          Kompletna baza wiedzy przygotowująca do egzaminu<br>
+          na <strong>patent żeglarza jachtowego PZŻ</strong>
+        </p>
+        <div class="mdx-hero__cta">
+          <a href="budowa-jachtu/" class="mdx-hero__btn mdx-hero__btn--filled">
+            Rozpocznij naukę
+          </a>
+          <a href="egzamin/" class="mdx-hero__btn mdx-hero__btn--outline">
+            Przejdź do egzaminu
+          </a>
+        </div>
+      </div>
+
+      <!-- Sailboat illustration -->
+      <div class="mdx-hero__vessel" aria-hidden="true">
+        <svg viewBox="0 0 300 230" xmlns="http://www.w3.org/2000/svg">
+          <!-- Rigging stays -->
+          <line x1="150" y1="28" x2="74"  y2="157" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <line x1="150" y1="28" x2="228" y2="157" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <!-- Mast -->
+          <rect x="147" y="22" width="5" height="135" rx="2.5" fill="rgba(255,255,255,0.92)"/>
+          <!-- Main sail -->
+          <path d="M152 30 L237 150 L152 150 Z" fill="rgba(255,255,255,0.82)"/>
+          <!-- Jib -->
+          <path d="M147 48 L64 148 L147 148 Z" fill="rgba(255,255,255,0.58)"/>
+          <!-- Boom -->
+          <line x1="152" y1="148" x2="229" y2="165"
+                stroke="rgba(255,255,255,0.72)" stroke-width="3" stroke-linecap="round"/>
+          <!-- Hull -->
+          <path d="M58 162 Q150 175 244 162 L228 183 Q150 197 74 183 Z"
+                fill="rgba(255,255,255,0.88)"/>
+          <!-- Cabin -->
+          <path d="M127 156 Q150 151 175 156 L171 165 Q150 161 130 165 Z"
+                fill="rgba(200,230,255,0.40)"/>
+          <!-- Flag -->
+          <path d="M152 22 L186 31 L152 41 Z" fill="rgba(76,175,80,1)"/>
+          <!-- Waterline reflection -->
+          <ellipse cx="150" cy="198" rx="86" ry="5" fill="rgba(255,255,255,0.07)"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#features" class="mdx-hero__scroll" aria-label="Przewiń w dół">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2"
+              fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <!-- Animated waves -->
+    <div class="mdx-hero__waves" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path"
+            d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+        </defs>
+        <g>
+          <use href="#wave-path" x="48" y="0" fill="rgba(255,255,255,0.15)" class="wave wave-1"/>
+          <use href="#wave-path" x="48" y="3" fill="rgba(255,255,255,0.09)" class="wave wave-2"/>
+          <use href="#wave-path" x="48" y="5" fill="rgba(255,255,255,0.06)" class="wave wave-3"/>
+          <use href="#wave-path" x="48" y="7" fill="rgba(255,255,255,0.04)" class="wave wave-4"/>
+        </g>
+      </svg>
+    </div>
+
+  </section>
+
+{% endblock %}
